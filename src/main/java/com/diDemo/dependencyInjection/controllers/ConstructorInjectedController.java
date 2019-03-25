@@ -1,16 +1,18 @@
 package com.diDemo.dependencyInjection.controllers;
 
-import com.diDemo.dependencyInjection.services.GreetingServiceImpl;
+import com.diDemo.dependencyInjection.services.GreetingService;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class ConstructorInjectedController {
 
-    private GreetingServiceImpl greetingService;
+    private GreetingService greetingService;
 
     @Autowired
-    public ConstructorInjectedController(GreetingServiceImpl greetingService){
+    public ConstructorInjectedController(@Qualifier("constructorGreetingServices") GreetingService greetingService){
         this.greetingService = greetingService;
     }
 
