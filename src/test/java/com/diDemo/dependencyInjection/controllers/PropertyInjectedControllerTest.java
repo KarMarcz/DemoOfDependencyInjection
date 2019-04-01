@@ -1,6 +1,6 @@
 package com.diDemo.dependencyInjection.controllers;
 
-import com.diDemo.dependencyInjection.services.GreetingServiceImpl;
+import services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

@@ -1,6 +1,6 @@
 package com.diDemo.dependencyInjection.controllers;
 
-import com.diDemo.dependencyInjection.services.GreetingService;
+import services.GreetingService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
