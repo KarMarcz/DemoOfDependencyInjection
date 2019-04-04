@@ -1,4 +1,4 @@
-package services;
+package com.diDemo.dependencyInjection.services;
 
 import org.springframework.stereotype.Service;
 
