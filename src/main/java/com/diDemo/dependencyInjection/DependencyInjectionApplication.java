@@ -1,16 +1,12 @@
 package com.diDemo.dependencyInjection;
 
-import com.diDemo.dependencyInjection.controllers.ConstructorInjectedController;
 import com.diDemo.dependencyInjection.controllers.MyController;
-import com.diDemo.dependencyInjection.controllers.PropertyInjectedController;
-import com.diDemo.dependencyInjection.controllers.SetterInjectedController;
+import com.diDemo.dependencyInjection.examplebeans.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-//@ComponentScan(basePackages = {"com/diDemo/dependencyInjection/services", "com.diDemo.dependencyInjection"})
 public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {
@@ -18,10 +14,12 @@ public class DependencyInjectionApplication {
 
 		MyController myController = (MyController) applicationContext.getBean("myController");
 
-		System.out.println(applicationContext.getBean(MyController.class).hello());
-		System.out.println(applicationContext.getBean(PropertyInjectedController.class).sayHello());
-		System.out.println(applicationContext.getBean(SetterInjectedController.class).sayHello());
-		System.out.println(applicationContext.getBean(ConstructorInjectedController.class).sayHello());
+		FakeDataSource fakeDataSource = (FakeDataSource) applicationContext.getBean(FakeDataSource.class);
+
+		System.out.println(fakeDataSource.getUser());
+		System.out.println(fakeDataSource.getPassword());
+		System.out.println(fakeDataSource.getUrl());
+
 	}
 
 }
