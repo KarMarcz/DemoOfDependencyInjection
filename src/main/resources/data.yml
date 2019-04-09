@@ -1,0 +1,34 @@
+name: Fiona
+
+names:
+  - Michal
+  - Marzena
+  - Mieczyslaw
+
+pound_sign: "#"
+
+book:
+  author: Stephen King
+  publisher: Dark Side
+
+truth: yes
+
+another_truth: True
+
+more_truth: true
+
+false: no
+
+string_val: "Michal sie nie uczy"
+
+colon_string: "my courses : spring junit hibernate selenium"
+
+include_new_lines: |
+  old line in include
+  new line in include
+
+ignore_new_lines: >
+  only this in ignore lines
+  this is not visible
+
+
