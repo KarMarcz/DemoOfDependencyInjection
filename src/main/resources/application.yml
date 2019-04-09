@@ -1,0 +1,5 @@
+someData:
+  jms:
+    username: karol
+    password: password
+    url: Tester

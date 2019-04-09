@@ -26,13 +26,13 @@ public class PropertyConfig {
 //    @Value("url")
     String url;
 
-    @Value("${jms.username}")
+    @Value("${someData.jms.username}")
     String jmsUserName;
 
-    @Value("${jms.password}")
+    @Value("${someData.jms.password}")
     String jmsPassword;
 
-    @Value("${jms.url}")
+    @Value("${someData.jms.url}")
     String jmsUrl;
 
     @Bean
