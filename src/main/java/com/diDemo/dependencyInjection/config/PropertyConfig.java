@@ -2,19 +2,13 @@ package com.diDemo.dependencyInjection.config;
 
 import com.diDemo.dependencyInjection.examplebeans.FakeDataSource;
 import com.diDemo.dependencyInjection.examplebeans.FakeJmsBroker;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.core.env.Environment;
-
 @Configuration
 public class PropertyConfig {
 
-    @Value("${username}")
+    @Value("${username2}")
 //    @Value("username")
     String user;
 

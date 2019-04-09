@@ -3,3 +3,12 @@ someData:
     username: karol
     password: password
     url: Tester
+
+---
+spring:
+  profiles: pl
+someData:
+  jms:
+    username: karol123
+    password: password123
+    url: Tester534
